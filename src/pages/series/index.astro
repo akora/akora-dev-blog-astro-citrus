@@ -1,0 +1,44 @@
+---
+import { getCollection } from "astro:content";
+import BaseLayout from "@/layouts/BaseLayout.astro";
+import SeriesCard from "@/components/SeriesCard.astro";
+
+const allSeries = await getCollection("series");
+const featuredSeries = allSeries.filter((series) => series.data.featured);
+const otherSeries = allSeries.filter((series) => !series.data.featured);
+---
+
+<BaseLayout
+	title="Documentation Series"
+	description="Browse our documentation series and guides"
+>
+	<section aria-label="Documentation series">
+		<h1 class="title mb-6">Documentation</h1>
+		
+		{featuredSeries.length > 0 && (
+			<div class="mb-8">
+				<h2 class="text-xl font-semibold mb-4">Featured Series</h2>
+				<div class="grid gap-4 md:grid-cols-2">
+					{featuredSeries.map((series) => (
+						<SeriesCard series={series} />
+					))}
+				</div>
+			</div>
+		)}
+		
+		{otherSeries.length > 0 && (
+			<div>
+				<h2 class="text-xl font-semibold mb-4">All Series</h2>
+				<div class="grid gap-4 md:grid-cols-2">
+					{otherSeries.map((series) => (
+						<SeriesCard series={series} />
+					))}
+				</div>
+			</div>
+		)}
+		
+		{allSeries.length === 0 && (
+			<p class="text-lighter">No documentation series available yet.</p>
+		)}
+	</section>
+</BaseLayout>
