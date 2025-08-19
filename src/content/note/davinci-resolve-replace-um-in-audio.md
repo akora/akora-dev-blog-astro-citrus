@@ -1,6 +1,7 @@
 ---
-title: "Davinci Resolve - replace \"Um\" in audio"
+title: "DaVinci Resolve - replace \"Um\" in audio"
 description: "Quick technique for covering unwanted audio like 'um' sounds using layered audio editing and room tone"
+tags: ["davinci-resolve", "audio-editing", "video-production", "post-production"]
 publishDate: "2025-08-19T21:29:54+02:00"
 ---
 
