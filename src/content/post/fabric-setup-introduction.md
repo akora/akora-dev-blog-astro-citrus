@@ -1,93 +1,91 @@
 ---
-title: "Getting Started with Fabric: Introduction and Installation"
-description: "Learn how to install and set up Fabric, the open-source framework for augmenting humans using AI patterns"
-tags: ["fabric", "ai", "setup", "tutorial", "automation"]
-publishDate: "2025-08-19T21:51:25+02:00"
+title: "Getting Started with Fabric: Installation and Setup"
+description: "Complete guide to installing and configuring Fabric - the open-source framework for augmenting humans using AI"
+publishDate: "2025-01-19T20:00:00.000Z"
+tags: ["fabric", "ai", "setup", "installation", "documentation", "go", "golang"]
 seriesId: "fabric-setup"
 orderInSeries: 1
 ---
 
-# Getting Started with Fabric
+Getting Started with Fabric: Installation and Setup
 
-[Fabric](https://github.com/danielmiessler/fabric) is an open-source framework designed to augment humans using AI. It provides a modular framework of chained prompts (called "patterns") that help you break down problems into components and apply AI to them.
+Fabric is an open-source framework for augmenting humans using AI. This guide covers the complete setup process from installing Go to configuring Fabric with the necessary API keys.
 
-## What is Fabric?
+## Install Go
 
-Fabric allows you to:
-- Use AI patterns for common tasks like summarizing, extracting insights, and creating content
-- Chain multiple AI operations together
-- Work with various AI providers (OpenAI, Anthropic, etc.)
-- Create custom patterns for your specific needs
-
-## Prerequisites
-
-Before installing Fabric, ensure you have:
-- Python 3.10 or higher
-- pip (Python package manager)
-- Git
-- An API key from your preferred AI provider (OpenAI, Anthropic, etc.)
-
-## Installation
-
-### Method 1: Install via pip (Recommended)
+First, install Go using Homebrew:
 
 ```bash
-pip install fabric-ai
+brew install go
 ```
 
-### Method 2: Install from source
+## Configure Go Environment
+
+Add the following to your `~/.zshrc`:
 
 ```bash
-git clone https://github.com/danielmiessler/fabric.git
-cd fabric
-pip install -e .
+# Golang environment variables
+export GOROOT=$(brew --prefix go)/libexec
+export GOPATH=$HOME/go
+export PATH=$GOPATH/bin:$GOROOT/bin:$HOME/.local/bin:$PATH
 ```
 
-## Initial Setup
-
-After installation, run the setup command:
+Then reload your shell configuration:
 
 ```bash
-fabric --setup
+source ~/.zshrc
 ```
 
-This will:
-1. Create the necessary configuration directories
-2. Download the latest patterns from the repository
-3. Prompt you to configure your AI provider settings
+## Install Fabric
 
-## Configuration
-
-### Setting up API Keys
-
-You'll need to configure at least one AI provider. The most common options are:
-
-**OpenAI:**
-```bash
-fabric --setup --openai
-```
-
-**Anthropic (Claude):**
-```bash
-fabric --setup --anthropic
-```
-
-### Verifying Installation
-
-Test your installation with:
+For macOS (arm64), download and install Fabric:
 
 ```bash
-fabric --list-patterns
+curl -L https://github.com/danielmiessler/fabric/releases/latest/download/fabric-darwin-arm64 > fabric && chmod +x fabric && ./fabric --version
 ```
 
-This should display all available patterns.
+## Setup Fabric
 
-## Next Steps
+Run the setup command to configure Fabric:
 
-In the next part of this series, we'll explore:
-- Basic usage and common patterns
-- Creating custom patterns
-- Advanced configuration options
-- Integration with other tools
+```bash
+./fabric --setup
+```
 
-Your Fabric installation is now ready to augment your workflow with AI!
+During setup, ensure all these components are configured:
+
+- **OpenAI** (configured)
+- **Default AI Vendor and Model** [required] (configured)
+- **Patterns** - Downloads patterns [required] (configured)
+- **YouTube** - to grab video transcripts and comments (configured)
+
+## Required API Keys
+
+You'll need two API keys for full functionality:
+
+### OpenAI API Key
+
+1. Go to [OpenAI API Keys](https://platform.openai.com/settings/proj_Vfoez2whXfp6scPdtPLIoZCj/api-keys)
+2. Create a new key named: `AKora-MacBookPro-Fabric`
+
+### YouTube API Key (Google Cloud)
+
+1. Create a project called `YouTube-API-Fabric`
+2. Go to [Google Cloud Console](https://console.cloud.google.com/home/dashboard?project=youtube-api-fabric-468005)
+3. Navigate to [API Credentials](https://console.cloud.google.com/apis/credentials?project=youtube-api-fabric-468005)
+4. Create a new API key for YouTube Data API
+
+## Verification
+
+After setup, verify everything is working:
+
+```bash
+./fabric --version
+./fabric --list-patterns
+```
+
+## Resources
+
+- [Official Fabric Repository](https://github.com/danielmiessler/fabric)
+
+This setup provides you with a fully functional Fabric installation ready for AI-powered content processing and analysis.
