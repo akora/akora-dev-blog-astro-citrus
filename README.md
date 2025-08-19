@@ -1,11 +1,10 @@
-<div align="center">
-  <img alt="Astro Citrus logo" src="https://github.com/ArtemKutsan/astro-citrus/blob/main/src/assets/images/logo.svg" width="70" />
-</div>
-<h1 align="center">
-  Astro Citrus
-</h1>
+# akora.dev
 
-Astro Citrus is a simple opinionated starter built with the Astro framework. Use it to create an easy-to-use blog or website.
+Developer blog and personal website built with Astro and the Citrus theme.
+
+## About
+
+This is the source code for [akora.dev](https://akora.dev), a developer blog focused on sharing insights about software development, technology, and the journey of building digital solutions.
 
 ## Table Of Contents
 
