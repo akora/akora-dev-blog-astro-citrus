@@ -1,24 +1,10 @@
-<?xml version="1.0" standalone="no"?>
-<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 20010904//EN"
- "http://www.w3.org/TR/2001/REC-SVG-20010904/DTD/svg10.dtd">
-<svg version="1.0" xmlns="http://www.w3.org/2000/svg"
- width="512.000000pt" height="512.000000pt" viewBox="0 0 512.000000 512.000000"
- preserveAspectRatio="xMidYMid meet">
-
-<g transform="translate(0.000000,512.000000) scale(0.100000,-0.100000)"
-fill="#000000" stroke="none">
-<path d="M2690 2555 l0 -1145 340 0 340 0 0 1145 0 1145 -340 0 -340 0 0
--1145z"/>
-<path d="M822 2957 l-102 -102 0 -98 0 -97 490 0 490 0 0 -625 0 -625 335 0
-335 0 0 617 0 618 -207 207 -208 208 -515 0 -515 0 -103 -103z"/>
-<path d="M3652 2824 l-162 -239 0 -437 c0 -240 4 -439 8 -442 9 -6 21 10 595
-803 292 402 377 525 366 532 -8 5 -59 9 -114 9 -55 0 -197 3 -316 7 l-216 6
--161 -239z"/>
-<path d="M1180 2363 l-325 -3 -137 -138 -138 -137 0 -195 0 -195 143 -143 142
--142 250 0 250 0 108 108 107 107 0 83 0 82 -175 0 -175 0 0 150 0 150 175 0
-175 0 0 140 0 140 -37 -2 c-21 -2 -184 -4 -363 -5z"/>
-<path d="M3900 2013 c-102 -135 -189 -251 -193 -259 -5 -8 15 -80 49 -178 l56
--165 342 5 c187 3 347 7 354 10 9 2 -33 96 -132 291 -146 289 -268 520 -283
-534 -4 4 -91 -103 -193 -238z"/>
-</g>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100">
+  <defs>
+    <linearGradient id="akGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:hsl(50deg 65% 75%);stop-opacity:1" />
+      <stop offset="100%" style="stop-color:hsl(50deg 85% 55%);stop-opacity:1" />
+    </linearGradient>
+  </defs>
+  <rect width="100" height="100" rx="20" fill="#1a1a1a"/>
+  <text x="50" y="70" font-family="system-ui, -apple-system, sans-serif" font-size="48" font-weight="bold" text-anchor="middle" fill="url(#akGradient)">AK</text>
 </svg>
