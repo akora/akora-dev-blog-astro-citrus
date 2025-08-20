@@ -20,7 +20,10 @@ const allNotes = await getCollection("note");
 const latestNotes = allNotes.sort(collectionDateSort).slice(0, MAX_NOTES);
 ---
 
-<PageLayout meta={{ title: "Home" }}>
+<PageLayout meta={{ 
+	title: "AKora.dev - Developer Blog & Project Stories", 
+	description: "Personal blog where I share stories behind my projects and the journey of bringing them to life. Explore development insights, tutorials, and technical adventures."
+}}>
 	<!-- Hero section -->
 	<!-- Background blur -->
 	<div class="absolute top-0 left-1/2 md:top-[-15%] -ml-[50vw] min-h-screen w-screen pointer-events-none blur-3xl opacity-50 overflow-x-hidden">
