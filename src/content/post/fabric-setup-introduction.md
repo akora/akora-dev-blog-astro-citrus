@@ -65,14 +65,14 @@ You'll need two API keys for full functionality:
 
 ### OpenAI API Key
 
-1. Go to [OpenAI API Keys](https://platform.openai.com/settings/proj_Vfoez2whXfp6scPdtPLIoZCj/api-keys)
-2. Create a new key named: `AKora-MacBookPro-Fabric`
+1. Go to OpenAI API Keys: this is usually under Platform > Settings
+2. Create a new key named: `<your-naming-convention>-Fabric`
 
 ### YouTube API Key (Google Cloud)
 
 1. Create a project called `YouTube-API-Fabric`
-2. Go to [Google Cloud Console](https://console.cloud.google.com/home/dashboard?project=youtube-api-fabric-468005)
-3. Navigate to [API Credentials](https://console.cloud.google.com/apis/credentials?project=youtube-api-fabric-468005)
+2. Go to `Google Cloud Console`
+3. Navigate to `API Credentials`
 4. Create a new API key for YouTube Data API
 
 ## Verification
