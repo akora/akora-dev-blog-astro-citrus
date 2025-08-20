@@ -10,9 +10,16 @@ const { series } = Astro.props;
 
 <article class="rounded-lg border border-color-200 bg-color-50 p-6 hover:bg-color-75 transition-colors">
 	<a href={`/series/${series.id}/`} class="block">
-		<h3 class="text-lg font-semibold mb-3 text-textColor hover:text-accent-base transition-colors">
-			{series.data.title}
-		</h3>
+		<div class="flex items-center gap-2 mb-3">
+			<h3 class="text-lg font-semibold text-textColor hover:text-accent-base transition-colors">
+				{series.data.title}
+			</h3>
+			{series.data.featured && (
+				<span class="px-2 py-1 text-xs font-medium bg-accent-two text-bgColor rounded-full">
+					Featured
+				</span>
+			)}
+		</div>
 		<p class="text-lighter">
 			{series.data.description}
 		</p>

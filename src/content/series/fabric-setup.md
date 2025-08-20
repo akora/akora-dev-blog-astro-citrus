@@ -2,7 +2,7 @@
 id: "fabric-setup"
 title: "Fabric Setup Guide"
 description: "Complete guide to setting up and using Fabric - an open-source framework for augmenting humans using AI"
-featured: true
+featured: false
 ---
 
 Fabric Setup Guide
