@@ -1,8 +1,10 @@
-# akora.dev
+# AKora.dev
 
 Developer blog and personal website built with Astro and the Citrus theme.
 
-## About
+A huge shoutout to [Artem Kutsan](https://github.com/artemkutsan) for creating the [Citrus](https://github.com/artemkutsan/astro-citrus) theme.
+
+## About the theme
 
 This is the source code for [akora.dev](https://akora.dev), a developer blog focused on sharing insights about software development, technology, and the journey of building digital solutions.
 
@@ -129,7 +131,6 @@ Adding a post/note is as simple as adding your .md(x) files to the `src/content/
 | **coverImage**       | This is an optional object that will add a cover image to the top of a post. Include both `src`: "_path-to-image_" and `alt`: "_image alt_". You can view an example in `src/content/post/cover-image.md`. |
 | **ogImage**          | This is an optional property. An OG Image will be generated automatically for every post where this property **isn't** provided. If you would like to create your own for a specific post, include this property and a link to your image, the theme will then skip automatically generating one. |
 | **draft**            | This is an optional property as it is set to `false` by default in the schema. By setting it to `true`, the post will be filtered out of the production build in a number of places, including `getAllPosts()` calls, OG images, RSS feeds, and generated page[s]. You can view an example in `src/content/post/draft-post.md`. |
-
 
 ### Note Frontmatter
 
