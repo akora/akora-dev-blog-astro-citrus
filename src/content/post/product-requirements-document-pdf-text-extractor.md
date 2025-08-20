@@ -1,7 +1,7 @@
 ---
 title: "Product Requirements Document for PDF Text Extractor"
 description: "The result: Product Requirements Document: PDF Text Extractor"
-publishDate: "2025-01-20T19:43:00.000Z"
+publishDate: "2025-08-20T19:43:00.000Z"
 tags: ["prd", "prompt", "gemini", "ai"]
 seriesId: "product-requirements-document-generation"
 orderInSeries: 2

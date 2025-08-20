@@ -1,7 +1,7 @@
 ---
 title: "Getting Started with Fabric: Installation and Setup"
 description: "Complete guide to installing and configuring Fabric - the open-source framework for augmenting humans using AI"
-publishDate: "2025-01-19T20:00:00.000Z"
+publishDate: "2025-08-19T20:00:00.000Z"
 tags: ["fabric", "ai", "setup", "installation", "documentation", "go", "golang"]
 seriesId: "fabric-setup"
 orderInSeries: 1

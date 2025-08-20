@@ -1,7 +1,7 @@
 ---
 title: "Product Requirements Document prompt for Gemini"
 description: "Initial discussion with Gemini to generate a Product Requirements Document"
-publishDate: "2025-01-20T19:02:00.000Z"
+publishDate: "2025-08-20T19:02:00.000Z"
 tags: ["prp", "prd", "prompt", "gemini", "ai"]
 seriesId: "product-requirements-document-generation"
 orderInSeries: 1
