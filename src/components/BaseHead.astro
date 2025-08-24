@@ -8,6 +8,11 @@ type Props = SiteMeta;
 
 const { articleDate, description, ogImage, title } = Astro.props;
 
+console.log("--- DEBUGGING WEBMENTION ENV VARS ---");
+console.log("WEBMENTION_URL:", WEBMENTION_URL);
+console.log("WEBMENTION_PINGBACK:", WEBMENTION_PINGBACK);
+console.log("-------------------------------------");
+
 const titleSeparator = "•";
 const siteTitle = `${title} ${titleSeparator} ${siteConfig.title}`;
 const canonicalURL = new URL(Astro.url.pathname, Astro.site);
