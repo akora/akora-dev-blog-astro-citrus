@@ -1,3 +1,7 @@
 [build]
   publish = "dist"
+
+[build.environment]
+  PUBLIC_WEBMENTION_URL = "https://webmention.io/akora.dev/webmention"
+  PUBLIC_WEBMENTION_PINGBACK = "https://webmention.io/akora.dev/xmlrpc"
   
