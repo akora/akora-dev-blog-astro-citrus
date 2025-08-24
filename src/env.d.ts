@@ -1,4 +1,5 @@
 /// <reference types="astro/client" />
+/// <reference types="@pagefind/default-ui/exports" />
 
 declare module "@pagefind/default-ui" {
 	declare class PagefindUI {
@@ -8,8 +9,8 @@ declare module "@pagefind/default-ui" {
 
 interface ImportMetaEnv {
 	readonly WEBMENTION_API_KEY: string;
-	readonly WEBMENTION_URL: string;
-	readonly WEBMENTION_PINGBACK: string;
+	readonly PUBLIC_WEBMENTION_URL: string;
+	readonly PUBLIC_WEBMENTION_PINGBACK: string;
 }
 
 interface ImportMeta {
