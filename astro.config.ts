@@ -131,11 +131,11 @@ export default defineConfig({
         context: "server",
         access: "secret",
       }),
-      WEBMENTION_URL: envField.string({
+      PUBLIC_WEBMENTION_URL: envField.string({
         context: "client",
         access: "public",
       }),
-      WEBMENTION_PINGBACK: envField.string({
+      PUBLIC_WEBMENTION_PINGBACK: envField.string({
         context: "client",
         access: "public",
       }),
