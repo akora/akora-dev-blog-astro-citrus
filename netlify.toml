@@ -1,6 +1,3 @@
 [build]
   publish = "dist"
-
-[build.processing.secrets_scan]
-  omit_keys = ["PUBLIC_WEBMENTION_URL", "PUBLIC_WEBMENTION_PINGBACK"]
   
