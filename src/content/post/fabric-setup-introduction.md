@@ -7,11 +7,11 @@ seriesId: "fabric-setup"
 orderInSeries: 1
 ---
 
-Getting Started with Fabric: Installation and Setup
+## Getting Started with Fabric: Installation and Setup
 
 Fabric is an open-source framework for augmenting humans using AI. This guide covers the complete setup process from installing Go to configuring Fabric with the necessary API keys.
 
-## Install Go
+### Install Go
 
 First, install Go using Homebrew:
 
@@ -19,7 +19,7 @@ First, install Go using Homebrew:
 brew install go
 ```
 
-## Configure Go Environment
+### Configure Go Environment
 
 Add the following to your `~/.zshrc`:
 
@@ -36,7 +36,7 @@ Then reload your shell configuration:
 source ~/.zshrc
 ```
 
-## Install Fabric
+### Install Fabric
 
 For macOS (arm64), download and install Fabric:
 
@@ -44,7 +44,7 @@ For macOS (arm64), download and install Fabric:
 curl -L https://github.com/danielmiessler/fabric/releases/latest/download/fabric-darwin-arm64 > fabric && chmod +x fabric && ./fabric --version
 ```
 
-## Setup Fabric
+### Setup Fabric
 
 Run the setup command to configure Fabric:
 
@@ -59,23 +59,23 @@ During setup, ensure all these components are configured:
 - **Patterns** - Downloads patterns [required] (configured)
 - **YouTube** - to grab video transcripts and comments (configured)
 
-## Required API Keys
+### Required API Keys
 
 You'll need two API keys for full functionality:
 
-### OpenAI API Key
+#### OpenAI API Key
 
 1. Go to OpenAI API Keys: this is usually under Platform > Settings
 2. Create a new key named: `<your-naming-convention>-Fabric`
 
-### YouTube API Key (Google Cloud)
+#### YouTube API Key (Google Cloud)
 
 1. Create a project called `YouTube-API-Fabric`
 2. Go to `Google Cloud Console`
 3. Navigate to `API Credentials`
 4. Create a new API key for YouTube Data API
 
-## Verification
+### Verification
 
 After setup, verify everything is working:
 
@@ -84,7 +84,7 @@ After setup, verify everything is working:
 ./fabric --list-patterns
 ```
 
-## Resources
+### Resources
 
 - [Official Fabric Repository](https://github.com/danielmiessler/fabric)
 

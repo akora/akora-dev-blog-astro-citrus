@@ -23,3 +23,6 @@ Thumbs.db
 
 # Data files
 .data/
+
+# Local Netlify folder
+.netlify

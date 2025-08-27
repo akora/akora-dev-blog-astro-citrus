@@ -7,7 +7,7 @@ seriesId: "multi-tier-home-lab"
 orderInSeries: 1
 ---
 
-# Building a Multi-Tier Home Lab
+## Building a Multi-Tier Home Lab
 
 Let me start with the definition of what I call a "tier": a tier in the context of my home lab means "**levels of a structure**".
 
@@ -19,7 +19,7 @@ I need to be able to access them remotely using the same set of software, protoc
 
 The most basic tier. At this level I want to make sure that each server is set up using the same defaults:
 
-- the Operating System should be the same, or as close to the same distro and version as possible (in my case it's [Ubuntu 24.04.2 Server 64 bit](https://ubuntu.com/download/server), to start with)
+- the Operating System should be the same, or as close to the same distro and version as possible
 - all servers and services must use UTC as the time zone
 - all servers must be set to the locale: "en_US.UTF-8"
 - all servers must have a user (that is not root) as the admin user, this user must be used to install docker and all related services on top of docker
