@@ -13,12 +13,12 @@ At the server level - in order to be able to SSH into the servers - super short,
 
 Instead of setting up static IP addresses, let's use our router's DHCP capabilities to assign IP addresses to the servers, and stick to them (aka "DHCP reservation").
 
-| Server   | IP Address   | Architecture | OS                         |
-|----------|--------------|--------------|----------------------------|
-| rpi4-01  | 192.168.0.41 | ARM          | Raspberry Pi OS Lite 64bit |
-| rpi4-02  | 192.168.0.42 | ARM          | Raspberry Pi OS Lite 64bit |
-| rpi5-01  | 192.168.0.51 | ARM          | Raspberry Pi OS Lite 64bit |
-| zima-01  | 192.168.0.91 | x86          | Ubuntu 24.04.2 Server      |
+| Server   | IP Address   | Architecture | OS                 |
+|----------|--------------|--------------|--------------------|
+| rpi4-01  | 192.168.0.41 | ARM          | Ubuntu 24.04.3 LTS |
+| rpi4-02  | 192.168.0.42 | ARM          | Ubuntu 24.04.3 LTS |
+| rpi5-01  | 192.168.0.51 | ARM          | Ubuntu 24.04.3 LTS |
+| zima-01  | 192.168.0.91 | x86          | Ubuntu 24.04.3 LTS |
 
 To make life easier, add these entries to your `~/.ssh/config` file:
 
@@ -124,4 +124,4 @@ More human readable names, but still not overwhelmingly long.
 
 ## Routing (& HTTPS)
 
-Traefik is used for routing and HTTPS. The main benefit is, that I've got Traefik configured with a wildcard certificate for `*.l4n.io`, so any new services will automatically get set up properly.
+Traefik is used for routing and HTTPS. The main benefit is, that I've got Traefik configured with a wildcard certificate for `*.l4n.io`, any new services will automatically get set up properly.

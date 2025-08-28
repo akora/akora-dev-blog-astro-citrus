@@ -52,16 +52,23 @@ Based on top of Tier TWO, I want to have:
 
 - [Portainer](https://github.com/portainer/portainer) installed and configured on one of the servers
 - The [Portainer agent](https://docs.portainer.io/admin/environments/add/docker/agent) installed and configured on all other servers
-- [Docker Socket Proxy](https://github.com/Tecnativa/docker-socket-proxy) installed and configured on all servers
+
+In order to make Portainer work seamlessly, in this tier I also need to have:
+
+- Local HTTPS and proper routing with [Traefik](https://traefik.io/)
+
+This tier ensures that the home lab is extensible, and there is a UI to manage all Docker containers.
 
 At any given time... ...you get the idea.
 
 ## Tier FOUR
 
-Based on top of Tier THREE, things are getting more specific here:
+Based on top of Tier THREE, things are getting more specific here.
 
-- The local lab's domain name is managed on one of the servers (previously [Nginx Proxy Manager](https://nginxproxymanager.com/))
-- Local HTTPS and proper routing is managed (previously [Traefik](https://traefik.io/))
+In order to be able to build a `homepage` for the lab, I need to have a service auto-discovery mechanism in place. This is where Docker Socket Proxy comes in. The requirement here then is to have:
+
+- [Docker Socket Proxy](https://github.com/Tecnativa/docker-socket-proxy) installed and configured on all servers
+- [Homepage](https://gethomepage.dev/) installed and configured on one of the servers
 
 ## The basis for additional services
 
@@ -72,6 +79,7 @@ At this point I have a pretty solid setup:
 - Can easily use [Portainer](https://github.com/portainer/portainer) to manage all Docker containers
 - Can easily use [Docker Compose](https://github.com/docker/compose) to manage all Docker services
 - Can easily use [Docker Socket Proxy](https://github.com/Tecnativa/docker-socket-proxy) to access special functions of the servers
+- [Homepage](https://gethomepage.dev/), to have a single point of UI to access all services
 
 ## Services
 
@@ -81,7 +89,6 @@ Here is where the real fun begins.
 - [Twingate](https://www.twingate.com/) Connectors, for remote access to the lab
 - [Pi-hole](https://pi-hole.net/), for ad-blocking
 - [Nutify](https://github.com/DartSteven/Nutify), for monitoring the UPSes
-- [Homepage](https://gethomepage.dev/), to have a single point of UI to access all services
 - [Uptime Kuma](https://github.com/louislam/uptime-kuma), for uptime monitoring
 - [Gitea](https://gitea.io/), for Git hosting
 - [n8n](https://n8n.io/), for automating workflows
