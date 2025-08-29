@@ -51,7 +51,7 @@ Again, at any given time I should be able to reset all servers to this state, an
 Based on top of Tier TWO, I want to have:
 
 - [Portainer](https://github.com/portainer/portainer) installed and configured on one of the servers
-- The [Portainer agent](https://docs.portainer.io/admin/environments/add/docker/agent) installed and configured on all other servers
+- The [Portainer agent](https://docs.portainer.io/admin/environments/add/docker/agent) installed and configured on all the other servers
 
 In order to make Portainer work seamlessly, in this tier I also need to have:
 
@@ -65,10 +65,12 @@ At any given time... ...you get the idea.
 
 Based on top of Tier THREE, things are getting more specific here.
 
-In order to be able to build a `homepage` for the lab, I need to have a service auto-discovery mechanism in place. This is where Docker Socket Proxy comes in. The requirement here then is to have:
+In order to be able to build a `home page` for the lab, I need to have a service auto-discovery mechanism in place. This is where Docker Socket Proxy comes in. The requirement here is to have:
 
 - [Docker Socket Proxy](https://github.com/Tecnativa/docker-socket-proxy) installed and configured on all servers
 - [Homepage](https://gethomepage.dev/) installed and configured on one of the servers
+
+This is the tier where it finally feels like something is finally working.
 
 ## The basis for additional services
 
@@ -83,7 +85,7 @@ At this point I have a pretty solid setup:
 
 ## Services
 
-Here is where the real fun begins.
+Here is where the real fun begins. At this point, I can finally start adding useful services to the lab.
 
 - [Watchtower](https://github.com/containrrr/watchtower), for automatically updating Docker containers
 - [Twingate](https://www.twingate.com/) Connectors, for remote access to the lab
@@ -94,6 +96,8 @@ Here is where the real fun begins.
 - [n8n](https://n8n.io/), for automating workflows
 - [Vaultwarden](https://github.com/dani-garcia/vaultwarden), for password management
 - [Syncthing](https://syncthing.net/), for file synchronization
+
+...the list is endless.
 
 ---
 

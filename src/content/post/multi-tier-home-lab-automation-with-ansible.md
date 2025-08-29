@@ -9,7 +9,7 @@ orderInSeries: 3
 
 ## Automation: Ansible to the rescue
 
-Now, that we have the low level specs (IP addresses, SSH, etc.) and high level specs (domain name, naming conventions, etc.) sorted out, let's move on to automation.
+Now, that we have the low level specs (IP addresses, SSH, etc.) and high level specs (domain names, naming conventions, etc.) sorted out, let's move on to automation.
 
 We'll be using Ansible to automate the deployment of our home lab.
 

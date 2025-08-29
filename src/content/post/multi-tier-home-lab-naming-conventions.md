@@ -11,7 +11,9 @@ orderInSeries: 2
 
 At the server level - in order to be able to SSH into the servers - super short, but also meaningful names are used.
 
-Instead of setting up static IP addresses, let's use our router's DHCP capabilities to assign IP addresses to the servers, and stick to them (aka "DHCP reservation").
+Instead of setting up static IP addresses (one by one on each server), let's use our router's DHCP capabilities to assign IP addresses to the servers, and stick to them (aka "DHCP reservation"). I call it "pinning" a MAC address to an IP address.
+
+Here is my setup:
 
 | Server   | IP Address   | Architecture | OS                 |
 |----------|--------------|--------------|--------------------|
@@ -34,7 +36,7 @@ Host *
 Host rpi4-01
     HostName 192.168.0.41
     User akora
-    IdentityFile /Users/akora/.ssh/homelab_ed25519
+    IdentityFile ~/.ssh/homelab_ed25519
     StrictHostKeyChecking accept-new
     ServerAliveInterval 60
     ServerAliveCountMax 3
@@ -42,7 +44,7 @@ Host rpi4-01
 Host rpi4-02
     HostName 192.168.0.42
     User akora
-    IdentityFile /Users/akora/.ssh/homelab_ed25519
+    IdentityFile ~/.ssh/homelab_ed25519
     StrictHostKeyChecking accept-new
     ServerAliveInterval 60
     ServerAliveCountMax 3
@@ -50,7 +52,7 @@ Host rpi4-02
 Host rpi5-01
     HostName 192.168.0.51
     User akora
-    IdentityFile /Users/akora/.ssh/homelab_ed25519
+    IdentityFile ~/.ssh/homelab_ed25519
     StrictHostKeyChecking accept-new
     ServerAliveInterval 60
     ServerAliveCountMax 3
@@ -58,7 +60,7 @@ Host rpi5-01
 Host zima-01
     HostName 192.168.0.91
     User akora
-    IdentityFile /Users/akora/.ssh/homelab_ed25519
+    IdentityFile ~/.ssh/homelab_ed25519
     StrictHostKeyChecking accept-new
     ServerAliveInterval 60
     ServerAliveCountMax 3
@@ -76,7 +78,9 @@ Try to secure a short domain name for the lab. You will type it quite often.
 
 For me this is `l4n.io`.
 
-Over the past few weeks I went through two experiments: one with super short, abbreviated subdomain names and finally, I settled for a non-abbreviated, but still short set of subdomain names.
+I have it configured on Cloudflare, and I use Cloudflare's DNS for the lab.
+
+Over the past few weeks I went through two experiments: one with super short, abbreviated subdomain names and finally, I settled for a mostly non-abbreviated, but still short set of subdomain names.
 
 ### Iteration one: Abbreviated subdomain names
 
@@ -102,7 +106,7 @@ Super short names, the goal is to limit it to 2, maximum 3 characters if possibl
 
 ### Iteration two: Non-abbreviated subdomain names
 
-More human readable names, but still not overwhelmingly long.
+More human-readable names, but still not overwhelmingly long.
 
 | Service | URL |
 |---------|-----|
@@ -124,4 +128,4 @@ More human readable names, but still not overwhelmingly long.
 
 ## Routing (& HTTPS)
 
-Traefik is used for routing and HTTPS. The main benefit is, that I've got Traefik configured with a wildcard certificate for `*.l4n.io`, any new services will automatically get set up properly.
+Traefik is used for routing and HTTPS. The main benefit is, that I've got Traefik configured with a wildcard certificate (for `*.l4n.io`), any new services will automatically get set up properly.
