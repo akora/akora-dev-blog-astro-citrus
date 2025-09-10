@@ -2,6 +2,7 @@
 import { PUBLIC_WEBMENTION_PINGBACK, PUBLIC_WEBMENTION_URL } from "astro:env/client";
 import { siteConfig } from "@/site.config";
 import type { SiteMeta } from "@/types";
+import GoogleAnalytics from "@/components/GoogleAnalytics.astro";
 import "@/styles/global.css";
 
 type Props = SiteMeta;
@@ -80,5 +81,8 @@ const socialImageURL = new URL(ogImage ? ogImage : "/social-card.png", Astro.url
 	PUBLIC_WEBMENTION_URL && <link href={PUBLIC_WEBMENTION_URL} rel="webmention" />
 }
 {PUBLIC_WEBMENTION_PINGBACK && <link href={PUBLIC_WEBMENTION_PINGBACK} rel="pingback" />}
+
+{/* Google Analytics */}
+<GoogleAnalytics />
 
 <meta content={Astro.generator} name="generator" />
