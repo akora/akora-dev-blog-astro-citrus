@@ -1,3 +1,5 @@
 [build]
   publish = "dist"
-  
+
+[context.production.environment]
+  PUBLIC_GA_MEASUREMENT_ID = "G-WZF2EN12E2"
