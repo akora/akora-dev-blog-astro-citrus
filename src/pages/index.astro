@@ -18,10 +18,11 @@ const allPostsByDate = allPosts
 const MAX_NOTES = 2;
 const allNotes = await getCollection("note");
 const latestNotes = allNotes.sort(collectionDateSort).slice(0, MAX_NOTES);
+const titleSeparator = "•";
 ---
 
 <PageLayout meta={{ 
-	title: "AKora.dev - Developer Blog & Project Stories", 
+	title: `AKora.dev ${titleSeparator} Tech blog and personal website of Andras Kora`, 
 	description: "Personal blog where I share stories behind my projects and the journey of bringing them to life. Explore development insights, tutorials, and technical adventures."
 }}>
 	<!-- Hero section -->
