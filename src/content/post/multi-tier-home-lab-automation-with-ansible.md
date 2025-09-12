@@ -126,3 +126,7 @@ At any given time I can reset all servers to this state.
 Let's not forget that we still don't have Portainer and its agents set up, no domain name management, no HTTPS, no proper routing.
 
 That's all coming in the next chapter.
+
+---
+
+_**To follow along, please regularly check the [akora/homelab](https://github.com/akora/homelab) repository on GitHub for the latest updates.**_

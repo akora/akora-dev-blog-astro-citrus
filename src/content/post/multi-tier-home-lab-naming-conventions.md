@@ -129,3 +129,7 @@ More human-readable names, but still not overwhelmingly long.
 ## Routing (& HTTPS)
 
 Traefik is used for routing and HTTPS. The main benefit is, that I've got Traefik configured with a wildcard certificate (for `*.l4n.io`), any new services will automatically get set up properly.
+
+---
+
+_**To follow along, please regularly check the [akora/homelab](https://github.com/akora/homelab) repository on GitHub for the latest updates.**_

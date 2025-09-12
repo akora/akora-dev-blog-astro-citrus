@@ -47,3 +47,7 @@ To begin with you need to focus on the HTTP routers; it comes with some pre-conf
 Portainer is a fancy - but useful - UI to manage Docker. It's actually more than that, particularly in our case: it allows us to get visibility beyond the local Docker installation, and with agents we can link all the other servers to it.
 
 ![Portainer](/images/Screenshot-Tier-ONE-TWO-THREE-FOUR-Portainer.png)
+
+---
+
+_**To follow along, please regularly check the [akora/homelab](https://github.com/akora/homelab) repository on GitHub for the latest updates.**_

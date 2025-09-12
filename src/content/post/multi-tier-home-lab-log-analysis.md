@@ -108,3 +108,7 @@ Nothing else but the following:
 With all this said, this is an ideal, stable and "starter" stage.
 
 The real fun begins from here ;)
+
+---
+
+_**To follow along, please regularly check the [akora/homelab](https://github.com/akora/homelab) repository on GitHub for the latest updates.**_

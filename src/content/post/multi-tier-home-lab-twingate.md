@@ -80,3 +80,7 @@ As you can see, it's the second most popular entry in my top domains list:
 ...and that's it.
 
 From now on, you can access your home lab from anywhere, by just simply connecting to your Twingate network.
+
+---
+
+_**To follow along, please regularly check the [akora/homelab](https://github.com/akora/homelab) repository on GitHub for the latest updates.**_

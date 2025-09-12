@@ -59,3 +59,7 @@ Here is the screenshot of the current state of the home lab:
 You see, all these services, just to make your homelab up and running, to make it extesible and to have visibility.
 
 We'll continue from here.
+
+---
+
+_**To follow along, please regularly check the [akora/homelab](https://github.com/akora/homelab) repository on GitHub for the latest updates.**_

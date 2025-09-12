@@ -78,4 +78,6 @@ Commands:
 
 Let's start adding some code repos there!
 
-Check out: <https://github.com/akora/homelab>
+---
+
+_**To follow along, please regularly check the [akora/homelab](https://github.com/akora/homelab) repository on GitHub for the latest updates.**_

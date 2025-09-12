@@ -18,7 +18,7 @@ The installation process is the same as for Gitea - and for any other future ser
 - an Ansible playbook
 - a corresponding Ansible role (which generates the docker compose file)
 - an entry in the `vault.yml` file for the service domain
-- and finally, a routing configuiration for Traefik
+- and finally, a routing configuration for Traefik
 
 The DNS and HTTPS configuration happens automatically, since we are utilising a wildcard domain setup (*.l4n.io).
 
@@ -68,4 +68,6 @@ Once the device(s) and folder(s) are added, Syncthing will start synchronizing.
 
 ...and, that's it!
 
-Check out: <https://github.com/akora/homelab>
+---
+
+_**To follow along, please regularly check the [akora/homelab](https://github.com/akora/homelab) repository on GitHub for the latest updates.**_
