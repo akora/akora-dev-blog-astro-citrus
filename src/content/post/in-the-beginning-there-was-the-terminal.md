@@ -2,7 +2,7 @@
 title: "In the beginning there was the terminal"
 description: "Showcasing The Emptiness Machine Theme Collection for Oh My Posh"
 publishDate: "2025-08-14"
-tags: ["Terminal", "Oh My Posh", "Themes"]
+tags: ["terminal", "oh-my-posh", "themes"]
 ---
 
 In this age of the attention economy it's crucial to decide where to put focus on, the only limited resouce you have is time.
