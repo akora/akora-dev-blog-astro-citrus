@@ -1,6 +1,6 @@
 ---
 title: "Wake Up"
-description: "Coming soon - thoughts on breaking out of routine and pursuing meaningful goals"
+description: "The chaos of singularity - my definition"
 tags: ["motivation", "philosophy", "personal"]
 publishDate: "2025-08-19T21:43:46+02:00"
 ---
