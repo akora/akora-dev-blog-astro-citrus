@@ -29,13 +29,10 @@ export default defineConfig({
     domains: ["webmention.io"],
   },
   redirects: {
-    // Tag redirects - consolidated to avoid route collisions
+    // Tag redirects - lowercase only to avoid route collisions
     '/tags/introduction/': '/tags',
-    '/tags/Introduction': '/tags',
     '/tags/blog/': '/posts', 
-    '/tags/Blog': '/posts',
     '/tags/welcome/': '/',
-    '/tags/Welcome': '/',
     
     // Post redirects - phantom welcome post
     '/posts/welcome-to-akora-dev': '/',
