@@ -20,12 +20,12 @@ const socialImageURL = new URL(ogImage ? ogImage : "/social-card.png", Astro.url
 <title>{siteTitle}</title>
 
 {/* Icons */}
-<link href="/icon.png" rel="icon" type="image/png" />
+<link href="/favicon.svg" rel="icon" type="image/svg+xml" />
+<link href="/favicon.ico" rel="icon" type="image/x-icon" />
 {
 	import.meta.env.PROD && (
 		<>
-			{/* Favicon & Apple Icon */}
-			<link rel="icon" href="/favicon-32x32.png" type="image/png" />
+			{/* Apple Touch Icon */}
 			<link href="/icons/apple-touch-icon.png" rel="apple-touch-icon" />
 			{/* Manifest */}
 			<link href="/manifest.webmanifest" rel="manifest" />
