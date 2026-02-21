@@ -26,6 +26,17 @@
 		const colorThemeMetaTag = document.querySelector("meta[name='theme-color']");
 		const bgColor = getComputedStyle(document.body).getPropertyValue("--theme-bg");
 		colorThemeMetaTag.setAttribute("content", `hsl(${bgColor})`);
+
+		// Replacing the <link> node entirely (rather than mutating its href) is the
+		// only reliable way to get Chrome to update the visible tab favicon at runtime.
+		const oldFavicon = document.querySelector("link[rel='icon'][type='image/svg+xml']");
+		const newFavicon = document.createElement("link");
+		newFavicon.rel = "icon";
+		newFavicon.type = "image/svg+xml";
+		newFavicon.href = `/favicon-${newTheme}.svg`;
+		document.head.appendChild(newFavicon);
+		oldFavicon?.remove();
+
 		if (typeof localStorage !== "undefined") {
 			localStorage.setItem("theme", newTheme);
 		}

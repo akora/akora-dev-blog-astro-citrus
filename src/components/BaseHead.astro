@@ -20,13 +20,21 @@ const socialImageURL = new URL(ogImage ? ogImage : "/social-card.png", Astro.url
 <title>{siteTitle}</title>
 
 {/* Icons */}
-<link href="/favicon.svg" rel="icon" type="image/svg+xml" />
+<link href="/favicon-dark.svg" id="svg-icon" rel="icon" type="image/svg+xml" />
+<script is:inline>
+	// Correct the SVG favicon to match the stored theme before the browser commits
+	// to fetching the default dark variant (runs synchronously during HTML parsing).
+	(function () {
+		var t = (typeof localStorage !== "undefined" && localStorage.getItem("theme")) || "dark";
+		document.getElementById("svg-icon").href = "/favicon-" + t + ".svg";
+	})();
+</script>
 <link href="/favicon.ico" rel="icon" type="image/x-icon" />
 {
 	import.meta.env.PROD && (
 		<>
 			{/* Apple Touch Icon */}
-			<link href="/icons/apple-touch-icon.png" rel="apple-touch-icon" />
+			<link href="/icons/apple-touch-icon.png" rel="apple-touch-icon" sizes="180x180" />
 			{/* Manifest */}
 			<link href="/manifest.webmanifest" rel="manifest" />
 		</>
@@ -42,7 +50,7 @@ const socialImageURL = new URL(ogImage ? ogImage : "/social-card.png", Astro.url
 <meta content={siteConfig.author} name="author" />
 
 {/* Theme Colour */}
-<meta content="" name="theme-color" />
+<meta content="#2bbc8a" name="theme-color" />
 
 {/* Open Graph / Facebook */}
 <meta content={articleDate ? "article" : "website"} property="og:type" />
